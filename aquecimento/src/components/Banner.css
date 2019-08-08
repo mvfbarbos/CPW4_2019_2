@@ -1,0 +1,42 @@
+.banner {
+    background-color: #2F2D2E;
+      padding: 20px 0px 10px 20px;
+}
+
+
+#titulo {
+    font-size: 150%;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#titulo a {
+    color:#F4F7BE;
+    text-decoration: none;
+}
+
+#titulo a:hover {
+    color:#95C623;
+
+}
+
+#menu {
+    list-style: none;
+    display: inline;
+}
+
+#menu li {
+    display: inline; /* pra nao ficar embaixo do outro */
+    margin-right: 20px;
+    padding-bottom: 3px;    
+}
+
+#menu li:hover /* quando mouse passa por cima */ {
+    border-bottom:3px solid #95C623;
+}
+
+#menu a {
+    text-decoration: none; /* tirar o sublinhado do link */
+    color:white;
+    font-size: 110%;
+}
