@@ -22,16 +22,16 @@ export default class App extends Component {
             <BrowserRouter>
                 <Banner />
 
-                <Switch>
-                <Route path="/inicio" component={Inicio} />
-                <Route path="/sobre" component={Sobre} />
-                <Route path="/contato" component={Contato} />
+                <div className="conteudo">
+                    <Switch>
+                        <Route path="/inicio" component={Inicio} />
+                        <Route path="/sobre" component={Sobre} />
+                        <Route path="/contato" component={Contato} />
+                        <Redirect to="/inicio" />
 
-                <Redirect to="/inicio" />
+                    </Switch>
 
-                </Switch>
-
-
+                </div>
 
             </BrowserRouter>
 
