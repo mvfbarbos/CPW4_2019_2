@@ -7,6 +7,7 @@ import {
 
 import Listas from './lista/Listas';
 import Lista from './lista/Lista';
+import "./App.scss";
 
 
 
