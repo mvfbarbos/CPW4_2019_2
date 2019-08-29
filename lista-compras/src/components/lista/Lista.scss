@@ -1,0 +1,39 @@
+@import '../Cores.scss';
+@import '../../fonts/Fontes.scss';
+
+
+.conteiner {
+padding:0px 10px;
+
+
+h2 {
+    color:$cor-titulo;
+    font-family: $fonte-principal;
+    padding-left: 10px;
+    }
+
+    #listagem{
+        margin: 5px;
+        
+
+        .item {
+                text-align: center;
+                font-family: $fonte-principal;
+                color:$cor-titulo;
+                background-color: $cor-fundo-item;
+                padding: 25px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+        }
+    }
+    #areaBotao{
+        margin: 5px;
+
+        #botaoNovaLista{
+            width: 40px;
+            float: right;
+            background-color: $cor-fundo-item;
+            border-radius: 100%;
+        }
+    }
+}
