@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {Link} from "react-router-dom";
 import Menu from '../menu/Menu';
 import logo from "../../img/logo.png";
 import ListaService from "../../services/ListaService";
@@ -51,14 +51,36 @@ export default class Listas extends Component {
                 <div className="conteiner">
 
                     <div>
-                        <h2>Minhas Listas</h2>
+
+
+                        {
+                            /**
+                             * neste trecho de codigo,
+                             * o operador AND(&&) atua como
+                             * um operador de ligação entre a
+                             * condição lógica e o código de 
+                             * apresnetação a ser renderizado.
+                             * */
+
+                            !this.state.listas &&
+                            <h2>Minhas Listas</h2>
+                        }
+
+                        {
+                            this.state.listas &&
+                            <p id="mensagemNenhumaLista">Cadastre já a sua primeira lista de compras</p>
+                        }
+
                         <div id="listagem">
                             {listas}
                         </div>
 
                         <div id="areaBotao">
-                            <img src={adicionar}alt="Nova Lista" id="botaoNovaLista"/>
-
+                        <Link to="/criarLista">    
+                            <div id="botaoNovaLista">                                                        
+                            <img src={adicionar} alt="Nova Lista" id="botaoNovaLista" />                            
+                            </div>
+                            </Link>
                         </div>
 
                     </div>
