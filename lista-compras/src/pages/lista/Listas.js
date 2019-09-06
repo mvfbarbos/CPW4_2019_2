@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom";
-import Menu from '../menu/Menu';
+
+import Menu from '../../components/menu/Menu';
 import logo from "../../img/logo.png";
 import ListaService from "../../services/ListaService";
-
 import './Lista.scss';
-
 import adicionar from "../../img/adicionar.png";
 
 

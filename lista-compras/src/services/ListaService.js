@@ -21,7 +21,7 @@ export default class ListaService {
 
     async salvar(lista) {      
             let resposta = await this.api .post("/", lista);
-            console.log(resposta);
+        
         
     }
 }
