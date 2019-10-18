@@ -1,0 +1,40 @@
+@import "././Cores.scss";
+
+#menu {
+   
+  padding: 50px 100px 714px 0px;
+  text-align: justify;
+    position: fixed;
+   border-right: solid grey 1px;
+   background-color: $cor-menu;
+   color:white;
+    
+
+
+    span{
+       
+        padding-left: 12px;
+        font-size: 18px;
+       
+    }  
+   
+    ul li {
+        padding: 6px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        color:white;
+       
+
+        a{
+            color:black;
+        }
+
+        a:link{
+            text-decoration:none;
+        }
+      }
+      
+
+  }
+  
