@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "decorativa";
+    src: url(./OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "padrao";
+    src: url(./Comfortaa-Regular.ttf);
+}
+@font-face {
+    font-family: "negrito";
+    src: url(./Comfortaa-Bold.ttf);
+}
+
+$fonte-decorativa:"decorativa";
+$fonte-padrao:"padrao";
+$fonte-negrito:"negrito";
