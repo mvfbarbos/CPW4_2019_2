@@ -6,7 +6,7 @@ import "./Header.scss";
 const Header = props => (
     <div className="header">
 
-            <Link to ={props.enredeçoPaginaAnterior}>
+            <Link to ={props.enderecoPaginaAnterior}>
                 <img src={props.logo} alt="Logo" />
             </Link>
 
