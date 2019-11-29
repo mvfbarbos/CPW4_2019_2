@@ -1,4 +1,4 @@
-@import "../fonts/Fontes";
+@import '../fonts/Fontes';
 
 #areaCartaz,
 #areaDadosSerie {
@@ -9,30 +9,48 @@
     width: 30%;
     text-align: center;
     vertical-align: top;
-    padding-top: 30px;
-
-
-    
+    padding-top: 25px;
 }
 
 #areaDadosSerie {
     width: 70%;
     font-family: $fonte-padrao;
-    
-    h2{
+
+    h2 {
         font-family: $fonte-negrito;
     }
 
-    span {
-        display: block;
-    }
     .nomeCampo {
         font-family: $fonte-negrito;
         margin-right: 5px;
     }
 
-    #sinopse{
+    #sinopse {
         display: inline;
-        
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #areaCartaz,
+    #areaDadosSerie {
+        display: block;
+        margin: auto;
+    }
+
+    #areaCartaz {
+        width: 100%;
+    }
+
+    #areaDadosSerie {
+
+        width: 90%;
+        padding: 0px 15px 30px 15px;
+
+
+        h2 {
+            text-align: center;
+        }
     }
 }
