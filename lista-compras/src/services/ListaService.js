@@ -10,6 +10,7 @@ export default class ListaService {
         this.api = axios.create({
             baseURL: 'http://localhost:3001/listas'
         });
+
     }
 
     async recuperarListas() {
@@ -17,17 +18,22 @@ export default class ListaService {
         this.listas = resposta.data;
         return this.listas;
     }
-
+    
     async salvar(lista) {
         await this.api.post('/', lista);
+        
+    }
+    async atualizar(lista) {
+        await this.api.put(`/${lista._id}`);
+        
     }
 
+   
+
+
     recuperarItens(termo) {
-        /**
-         * Se não tem nenhum termo,
-         * ou seja, nenhum filtro de consulta,
-         * então retorna uma lista vazia.
-         */
+      
+
         if (!termo) {
             return [];
         }
@@ -45,6 +51,11 @@ export default class ListaService {
         }
 
         return itensFiltrados;
+    }
+
+    //incluir item na lista
+    async incluirItem (lista, item){
+        await this.api.post('/', lista/item);
     }
 
 }

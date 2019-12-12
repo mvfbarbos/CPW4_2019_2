@@ -1,0 +1,11 @@
+{
+  "name": "Lista Compras",
+  "short_name": "lista",
+  "theme_color": "#111144",
+  "background_color": "#2196f3",
+  "display": "browser",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": null,
+  "splash_pages": null
+}

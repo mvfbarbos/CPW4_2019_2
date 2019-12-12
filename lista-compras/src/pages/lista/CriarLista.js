@@ -17,21 +17,14 @@ export default class CriarLista extends Component {
     }
 
     salvar = (event) => {
-        /**
-         * Previne o comportamento padrão
-         * do formulário, que é recarregar
-         * a página.
-         */
+      
         event.preventDefault();
 
         const service = new ListaService();
         const lista = this.state;
         service.salvar(lista);
 
-        /**
-         * Faz o encaminhamento para a
-         * página inicial do app.
-         */
+       
         this.props.history.push(ROTAS.INICIO);
     }
 
@@ -53,6 +46,7 @@ export default class CriarLista extends Component {
                         placeholder="Digite o nome da lista" />
                     <input type="submit" value="Criar" />
                 </form>
+
             </div>
         )
     }

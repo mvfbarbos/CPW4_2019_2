@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import Menu from '../../components/menu/Menu';
 import logo from '../../img/logo.png';
 import ListaService from '../../services/ListaService';
 import './Lista.scss';
 import adicionar from '../../img/adicionar.png';
 import rotas from '../../constants/rotas';
-
 export default class Listas extends Component {
 
     constructor() {
-        /**
-         * Toda vez que criar um construtor
-         * em um componente React, lembre-se
-         * de invocar o construtor da classe
-         * mãe Component na primeira linha de
-         * código.
-         */
+    
         super();
 
         this.state = {
@@ -36,16 +28,21 @@ export default class Listas extends Component {
     render() {
         const listas =
             this.state.listas.map(lista => (
-                <Link
-                    to={
-                        {
-                            pathname: rotas.LISTA,
-                            state: { lista }
+                <div className="item">
+                    <Link
+                        to={
+                            {
+                                pathname: rotas.LISTA,
+                                state: { lista }
+                            }
                         }
-                    }
-                    key={lista._id}>
-                    <div className="item">{lista.nome}</div>
-                </Link>
+                        key={lista._id}>
+                        <div className="item">{lista.nome}</div>
+
+
+                    </Link>
+                   
+                </div>
             ));
 
         return (
@@ -59,13 +56,7 @@ export default class Listas extends Component {
                     <div>
 
                         {
-                            /**
-                             * Neste trecho de código, 
-                             * o operador AND (&&) atua como
-                             * um operador de ligação entre a
-                             * condição lógica e o código de 
-                             * apresentação a ser renderizado.
-                             */
+                        
                             !this.state.listas &&
                             <h2>Minhas listas</h2>
                         }
@@ -81,6 +72,9 @@ export default class Listas extends Component {
 
                         <div className="listagem">
                             {listas}
+
+
+
                         </div>
 
                         <div id="areaBotao">
