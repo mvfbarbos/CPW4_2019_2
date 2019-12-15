@@ -1,0 +1,179 @@
+@import '../Cores';
+@import '../fonts/Fontes';
+
+
+            * {
+                margin: 0;
+                padding: 0;
+                background:$cor4;
+        }
+            
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                color:$cor3;
+                font-family:$fonte-decorativa;
+                margin-bottom: 40px;
+         }
+
+            form {
+                
+                display: inline-block;
+                border-radius: 20px;
+             
+            
+        }
+
+            input {
+                
+                border-radius: 20px;
+                border: none;
+                width: 50%;
+                height: 30px;
+                
+               
+                
+
+                &[type=text] {
+                    margin-left: 550px;
+                    text-align: center;                    
+                    background:$cor1;
+                     border-radius: 20px 20px 20px 20px;
+               
+          }
+        }
+         
+        button {            
+            border:none;      
+            margin-top: 10px;   
+        
+            
+        }
+         
+       #submite{
+          margin-left:200px;
+          display: inline-block;    
+          line-height: 40px;      
+
+       }              
+          input , button:focus {
+                outline: none;
+               
+         }
+
+        .resultado {
+                width: 500px;
+                margin: 0 auto;
+                margin-right: 385px;
+                margin-bottom: 20px;
+                padding:20px
+              
+     }
+         .resultado h3 {
+                font-size: 25px;
+                color: $cor3;
+                font-family: $fonte-negrito;
+                float:left;
+                padding: 0px 10px 0px 10px;
+                 width: 120px;
+             
+     }
+         .resultado h3 a {
+               color:$cor2;
+                text-decoration: none;
+     }
+       
+            
+          .resultado .link a {
+              
+                font-size: $fonte-decorativa;
+               
+     }
+     #conteudo {
+         
+        vertical-align: top;
+        width: 30%;
+        display: inline-block;
+        font-size: 14px;
+        margin-right: 170px;
+        
+       
+    }
+    a{
+        text-decoration: none;
+        color: $cor2;
+    }
+  
+    
+
+ 
+    @media only screen and (max-width: 700px){
+        #inicio{
+            width: 100%;
+            font-size: 40%;
+            
+        }
+
+            h1{
+            font-size: 25px;
+            padding-top: 10px;
+           
+         }
+              
+         
+        .resultado h3{
+            float:left;
+         
+          width: 120px;
+
+
+           
+        }
+        
+        #conteudo{
+           
+            vertical-align: top;
+            width: 30%;
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+      
+
+                    
+               input {
+                    padding: 0 ;            
+                    margin: 1px;                   
+                    margin-right: 0px;
+                   
+
+                    &[type=text] {
+
+                        margin-left: 37%;
+                        width: 90.8%;
+                        height: 35px;
+                        margin: 20px;
+                        
+                }
+            }
+           
+             
+           #submite{          
+         margin-left: 0;
+        
+        
+
+            
+           }    
+           button img {
+              margin-top: 10px; 
+    
+           }
+           #centralizar{
+               padding: 0px 0px 0px 37px;
+           }
+         
+        }
+        
+    
